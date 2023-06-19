@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: min(500px, 90%);
+    padding: 1rem;
+    @media screen and (max-width: 375px) {
+        width: 100%;
+    }
+}

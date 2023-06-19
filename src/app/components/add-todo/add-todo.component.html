@@ -1,0 +1,9 @@
+<mat-card>    
+    <mat-card-content>
+        <mat-form-field class="full-width-form" appearance="fill">
+            <mat-label></mat-label>
+            <mat-radio-button matPrefix disabled></mat-radio-button>
+            <input type="text" matInput #addTodoInput (keyup.enter)="addTodo(addTodoInput.value)">
+        </mat-form-field>
+    </mat-card-content>
+</mat-card>

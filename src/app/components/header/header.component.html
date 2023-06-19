@@ -1,0 +1,13 @@
+<header>
+    <nav>
+        <a mat-flat-button *ngIf="!user" routerLink="/login">Login</a>
+        <button *ngIf="user" mat-flat-button (click)="logout()">Logout</button>
+    </nav>
+    <div class="page-header-container">
+        <h2>{{pageTitle}}</h2> 
+        <button mat-icon-button aria-label="Change Theme" (click)="changeTheme()">
+            <mat-icon class="icon-theme" [svgIcon]="currentThemeIcon"></mat-icon>
+        </button>
+    </div>
+    
+</header>

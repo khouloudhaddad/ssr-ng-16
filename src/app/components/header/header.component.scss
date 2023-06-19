@@ -1,0 +1,21 @@
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    h2 {
+        letter-spacing: 10px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+mat-icon {
+    height: 30px;
+}

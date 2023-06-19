@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/start"
+  status = 200
+
+[build]
+  command = "npm run build:ssr && npm run copy:files"
+  functions = "netlify/functions/"
+
+[functions]
+  included_files = ["dist/**"]

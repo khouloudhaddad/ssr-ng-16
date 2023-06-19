@@ -1,0 +1,10 @@
+<div class="container">
+  <app-header [pageTitle]="pageTitle"></app-header>
+  <main>
+    <router-outlet (activate)="changePageHeader()"></router-outlet>
+  </main>
+  <footer>
+    &copy; 2022
+  </footer>
+</div>
+

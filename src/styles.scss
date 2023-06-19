@@ -1,0 +1,37 @@
+@import "./scss/theme";
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+    font-size: 18px;
+    box-sizing: border-box;
+}
+body { 
+    margin: 0; 
+    font-family: "Josefin Sans", "Helvetica Neue", sans-serif; 
+    background-image: url("/assets/images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+    @media screen and (max-width: 375px){
+        background-image: url("/assets/images/bg-mobile-light.jpg");        
+    }
+}
+
+.mat-form-field-underline {
+    display: none;
+}
+
+.mat-form-field-wrapper {
+    padding: 0;
+}
+
+.icon-check {
+    border-radius: 90px;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    position: relative;
+    svg {
+        position: absolute;
+        top: 8px;
+        left: 6px;
+    }
+}
